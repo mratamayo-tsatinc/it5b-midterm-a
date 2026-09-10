@@ -1,40 +1,44 @@
 /*
 @output
-Temperature Report
+a = 15, b = 4
+Sum: 19
+Difference: 11
+Product: 60
+Integer Quotient: 3
+Remainder: 3
+Float Quotient: 3.75
 
-0 - Cold
-5 - Cold
-10 - Cold
-15 - Warm
-20 - Warm
-25 - Warm
-30 - Hot
-35 - Hot
-40 - Hot
-
-END OF REPORT
 @variables
-temp = 45
+sum = 19
+diff = 11
+product = 60
+quotient = 3
+remainder = 3
+floatQuotient = 3.75
 */
 #include <stdio.h>
 
 int main() {
-    printf("Temperature Report\n");
-    printf("\n");
+    int a = 15;
+    int b = 4;
 
-    int temp = 0;
-    do {
-        if (temp <= 10) {
-            printf("%d - Cold\n", temp);
-        } else if (temp <= 25) {
-            printf("%d - Warm\n", temp);
-        } else {
-            printf("%d - Hot\n", temp);
-        }
-        temp += 5;
-    } while (temp <= 40);
+    int sum = a + b;
+    int diff = a - b;
+    int product = a * b;
+    int quotient = a / b;
+    int remainder = a % b;
 
-    printf("\nEND OF REPORT");
+    float x = 15.0;
+    float y = 4.0;
+    float floatQuotient = x / y;
+
+    printf("a = %d, b = %d\n", a, b);
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", diff);
+    printf("Product: %d\n", product);
+    printf("Integer Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+    printf("Float Quotient: %.2f\n", floatQuotient);
 
     return 0;
 }

@@ -1,39 +1,31 @@
 /*
 @output
-Number Classification
+Name: Maria
+Age: 20
+Height: 165.5 cm
+Grade: A
+Pi (2 decimals): 3.14
+Pi (4 decimals): 3.1416
 
-1 - Small
-2 - Small
-3 - Small
-4 - Medium
-5 - Medium
-6 - Medium
-7 - Medium
-8 - Large
-9 - Large
-10 - Large
-
-END OF PROGRAM
 @variables
-i = 11
+age = 20
+height = 165.5
+grade = A
+name = Maria
 */
 #include <stdio.h>
 
 int main() {
-    printf("Number Classification\n");
-    printf("\n");
+    int age = 20;
+    float height = 165.5;
+    char grade = 'A';
+    char name[] = "Maria";
 
-    for (int i = 1; i <= 10; i++) {
-        if (i <= 3) {
-            printf("%d - Small\n", i);
-        } else if (i <= 7) {
-            printf("%d - Medium\n", i);
-        } else {
-            printf("%d - Large\n", i);
-        }
-    }
-
-    printf("\nEND OF PROGRAM");
-
+    printf("Name: %s\n", name);
+    printf("Age: %d\n", age);
+    printf("Height: %.1f cm\n", height);
+    printf("Grade: %c\n", grade);
+    printf("Pi (2 decimals): %.2f\n", 3.14159);
+    printf("Pi (4 decimals): %0.4f\n", 3.14159);
     return 0;
 }

@@ -1,39 +1,45 @@
 /*
 @output
-Number Analysis
+Initial score: 75
+Initial price: 9.50
+Initial letter: B
+Updated score: 90
+Updated price: 12.00
+Updated letter: A
+Final score: 95
 
-1 - Odd
-2 - Even
-3 - Odd
-4 - Multiple of 4
-5 - Odd
-6 - Even
-7 - Odd
-8 - Multiple of 4
-
-END OF ANALYSIS
 @variables
-i = 9
+score = 95
+price = 12.00
+letter = A
+bonus = 90
 */
 #include <stdio.h>
 
 int main() {
-    printf("Number Analysis\n");
-    printf("\n");
+    int score;
+    float price;
+    char letter;
 
-    int i = 1;
-    while (i <= 8) {
-        if (i % 2 == 0 && i % 4 == 0) {
-            printf("%d - Multiple of 4\n", i);
-        } else if (i % 2 == 0) {
-            printf("%d - Even\n", i);
-        } else {
-            printf("%d - Odd\n", i);
-        }
-        i++;
-    }
+    score = 75;
+    price = 9.5;
+    letter = 'B';
 
-    printf("\nEND OF ANALYSIS");
+    printf("Initial score: %d\n", score);
+    printf("Initial price: %.2f\n", price);
+    printf("Initial letter: %c\n", letter);
 
+    score = 90;
+    price = price + 2.5;
+    letter = 'A';
+
+    printf("Updated score: %d\n", score);
+    printf("Updated price: %.2f\n", price);
+    printf("Updated letter: %c\n", letter);
+
+    int bonus = score;
+    score = bonus + 5;
+
+    printf("Final score: %d\n", score);
     return 0;
 }

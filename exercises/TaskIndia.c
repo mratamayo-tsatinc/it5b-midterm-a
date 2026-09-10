@@ -1,23 +1,40 @@
 /*
 @output
-Program started.
-Program ended.
+Stored values:
+==========
+a = 10
+==========
+b = 5
+==========
+c = 3
+==========
+d = 1
+==========
 
 @variables
-n = 20
-i = 1
+a = 10
+b = 5
+c = 3
+d = 1
 */
 #include <stdio.h>
 
 int main() {
-    int n = 20;
-    int i = 1;
-    printf("Program started.\n");
-    while (i > n) {
-        printf("%d\n", i);
-        i++;
-    }
-    printf("Program ended.\n");
+    int a = 10;
+    int b = 5;
+    int c = 3;
+    int d = 1;
+
+    printf("Stored values:\n");
+    printf("==========\n");
+    printf("a = %d\n", a);
+    printf("==========\n");
+    printf("b = %d\n", b);
+    printf("==========\n");
+    printf("c = %d\n", c);
+    printf("==========\n");
+    printf("d = %d\n", d);
+    printf("==========\n");
 
     return 0;
 }

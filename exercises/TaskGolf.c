@@ -1,24 +1,21 @@
 /*
 @output
-232-23-2-0-
-Number of digits: 4
+===NO OUTPUT===
 @variables
-number = 0
-count = 4
+a = 10
+b = 5
+c = 3
+d = 1
 */
 #include <stdio.h>
 
 int main() {
-    int number = 2322;
-    int count = 0;
+    int a = 10;
+    int b = 5;
+    int c = 3;
+    int d = 1;
 
-    while (number != 0) {
-        number /= 10;
-        printf("%d-", number);
-        count++;
-    }
-
-    printf("\nNumber of digits: %d\n", count);
+    printf("===NO OUTPUT===");
 
     return 0;
 }

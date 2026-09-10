@@ -1,38 +1,24 @@
 /*
 @output
-Number: 10
-1
+NUMBER SEQUENCE:
+5
 4
-9
-16
-25
-36
-49
-64
-81
-100
+3
+2
+1
 
-
-END OF PROGRAM
 @variables
-number = 10
-i = 11
+(this program does not declare any variables)
 */
 #include <stdio.h>
-
+ 
 int main() {
-    int number = 10;
-
-    printf("Number: %d\n", number);
-
-    int i = 1;
-
-    while (i <= number) {
-        printf("%d\n", i * i);
-        i++;
-    }
-
-    printf("\n\nEND OF PROGRAM");
+    printf("NUMBER SEQUENCE:\n");
+    printf("5\n");
+    printf("4\n");
+    printf("3\n");
+    printf("2\n");
+    printf("1\n");
 
     return 0;
 }

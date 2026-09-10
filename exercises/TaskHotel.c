@@ -1,30 +1,22 @@
 /*
 @output
-START OF PROGRAM
+Learning escape characters in C
+She said, "C programming is fun!"
+It's time to practice.
+File path: C:\Programs\C
+Loading Done!      
 
-
-
-Sum of numbers from 1 to 5: 0
-
-
-END OF PROGRAM
 @variables
-sum = 0
-i = 5
+(this program does not declare any variables)
 */
 #include <stdio.h>
 
 int main() {
-    int sum = 0;
-    printf("START OF PROGRAM\n");
-    printf("\n");
-    for (int i = 5; i <= 1; i--) {
-        printf("%d ", i);
-        sum += i;
-    }
-
-    printf("\n\nSum of numbers from 1 to 5: %d\n", sum);
-    printf("\n\nEND OF PROGRAM");
-
+    printf("Learning escape characters in C\n");
+    printf("She said, \"C programming is fun!\"\n");
+    printf("It\'s time to practice.\n");
+    printf("File path: C:\\Programs\\C\n");
+    printf("Loading......\r");
+    printf("Loading Done!\n");
     return 0;
 }

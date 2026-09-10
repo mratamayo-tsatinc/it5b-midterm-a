@@ -1,31 +1,13 @@
 /*
 @output
-Factors of 12:
-1
-2
-3
-4
-6
-12
-
+Learning C Programming!
 @variables
-number = 12
-factor = 13
+(this program does not declare any variables)
 */
 #include <stdio.h>
-
+ 
 int main() {
-    int number = 12;
-    int factor = 1;
-    printf("Factors of %d:\n", number);
-    do {
-        if (number % factor == 0) {
-            printf("%d\n", factor);
-        }
-        factor++;
-    } while (factor <= number);
-
-    printf("\n");
+    printf("Learning C Programming!");
 
     return 0;
 }

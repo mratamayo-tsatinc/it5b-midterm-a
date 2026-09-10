@@ -1,62 +1,34 @@
 /*
 @output
-Operation Log
-
-1 - Multiply: 1
-2 - Count: 1
-3 - Add: 3
-4 - Multiply: 4
-5 - Count: 2
-6 - Add: 9
-
-Summary:
-Sum = 9
-Product = 4
-Count = 2
-Last = 6
+age = 19, hasID = 1, hasTicket = 0
+canEnterClub: 1
+canWatchMovie: 1
+isDenied: 0
+complexCheck: 1
 
 @variables
-i = 7
-sum = 9
-product = 4
-count = 2
-last = 6
+canEnterClub = 1
+canWatchMovie = 1
+isDenied = 0
+complexCheck = 1
 */
 #include <stdio.h>
 
 int main() {
-    int sum = 0;
-    int product = 1;
-    int count = 0;
-    int last = 0;
+    int age = 19;
+    int hasID = 1;
+    int hasTicket = 0;
 
-    printf("Operation Log\n");
-    printf("\n");
+    int canEnterClub = (age >= 18) && hasID;
+    int canWatchMovie = (age >= 13) || hasTicket;
+    int isDenied = !canEnterClub;
+    int complexCheck = (age > 17 && hasID == 1) || (hasTicket == 1 && age > 21);
 
-    for (int i = 1; i <= 6; i++) {
-        last = i;
-        switch (i % 3) {
-            case 0:
-                sum += i;
-                printf("%d - Add: %d\n", i, sum);
-                break;
-            case 1:
-                product *= i;
-                printf("%d - Multiply: %d\n", i, product);
-                break;
-            case 2:
-                count++;
-                printf("%d - Count: %d\n", i, count);
-                break;
-        }
-    }
-
-    printf("\n");
-    printf("Summary:\n");
-    printf("Sum = %d\n", sum);
-    printf("Product = %d\n", product);
-    printf("Count = %d\n", count);
-    printf("Last = %d\n", last);
+    printf("age = %d, hasID = %d, hasTicket = %d\n", age, hasID, hasTicket);
+    printf("canEnterClub: %d\n", canEnterClub);
+    printf("canWatchMovie: %d\n", canWatchMovie);
+    printf("isDenied: %d\n", isDenied);
+    printf("complexCheck: %d\n", complexCheck);
 
     return 0;
 }

@@ -1,24 +1,38 @@
 /*
 @output
-Printing numbers from 10 to 1...
---END--
+age = 19
+hasID = 1
+hasTicket = 0
+canEnterClub: 1
+canWatchMovie: 1
+isDenied: 0
+complexCheck: 1
 
 @variables
-i = 10
+canEnterClub = 1
+canWatchMovie = 1
+isDenied = 0
+complexCheck = 1
 */
 #include <stdio.h>
 
 int main() {
-    int i = 10;
+    int age = 19;
+    int hasID = 1;
+    int hasTicket = 0;
 
-    printf("Printing numbers from 10 to 1...\n");
+    int canEnterClub = (age >= 18) && hasID;
+    int canWatchMovie = (age >= 13) || hasTicket;
+    int isDenied = !canEnterClub;
+    int complexCheck = (age > 17 && hasID == 1) || (hasTicket == 1 && age > 21);
 
-    while (i < 1) {
-        printf("%d\n", i);
-        i--;
-    }
-
-    printf("--END--\n");
+    printf("age = %d\n", age);
+    printf("hasID = %d\n", hasID);
+    printf("hasTicket = %d\n", hasTicket);
+    printf("canEnterClub: %d\n", canEnterClub);
+    printf("canWatchMovie: %d\n", canWatchMovie);
+    printf("isDenied: %d\n", isDenied);
+    printf("complexCheck: %d\n", complexCheck);
 
     return 0;
 }

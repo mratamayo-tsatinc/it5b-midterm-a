@@ -1,46 +1,22 @@
 /*
 @output
-1
-2
-3 - Fizz
-4
-5 - Buzz
-6 - Fizz
-7
-8
-9 - Fizz
-10 - Buzz
-11
-12 - Fizz
-13
-14
-15 - FizzBuzz
-16
-17
-18 - Fizz
-19
-20 - Buzz
+Learn
+Learning C
+Learning C Pro
+Learning C Program
+Learning C Programming!
 
 @variables
-number = 21
+(this program does not declare any variables)
 */
 #include <stdio.h>
-
+ 
 int main() {
-    int number = 1;
-
-    do {
-        if (number % 3 == 0 && number % 5 == 0) {
-            printf("%d - FizzBuzz\n", number);
-        } else if (number % 3 == 0) {
-            printf("%d - Fizz\n", number);
-        } else if (number % 5 == 0) {
-            printf("%d - Buzz\n", number);
-        } else {
-            printf("%d\n", number);
-        }
-        number++;
-    } while (number <= 20);
+    printf("Learn\n");
+    printf("Learning C\n");
+    printf("Learning C Pro\n");
+    printf("Learning C Program\n");
+    printf("Learning C Programming!\n");
 
     return 0;
 }

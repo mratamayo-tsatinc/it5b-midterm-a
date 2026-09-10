@@ -6,7 +6,7 @@ let currentUser = "";
 
 // Settings and Mode Management
 let appSettings = {
-    mode: 'exam',
+    mode: 'practice',
     timerMinutes: 30
 };
 

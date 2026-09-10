@@ -1,24 +1,45 @@
 /*
 @output
-Printing numbers from 10 to 1...
---END--
+initial total: 20
+35->27->81->20->0
+
+initial balance: 100.00
+final balance: 65.12
 
 @variables
-i = 10
+total = 0
+balance = 65.12
 */
 #include <stdio.h>
 
 int main() {
-    int i = 10;
+    int total = 20;
+    printf("initial total: %d\n", total);
 
-    printf("Printing numbers from 10 to 1...\n");
+    total += 15;
+    printf("%d->", total);
 
-    while (i < 1) {
-        printf("%d\n", i);
-        i--;
-    }
+    total -= 8;
+    printf("%d->", total);
 
-    printf("--END--\n");
+    total *= 3;
+    printf("%d->", total);
+
+    total /= 4;
+    printf("%d->", total);
+
+    total %= 5;
+    printf("%d\n\n", total);
+
+    float balance = 100.0;
+    printf("initial balance: %.2f\n", balance);
+
+    balance += 50.5;
+    balance -= 20.25;
+    balance *= 2;
+    balance /= 4;
+
+    printf("final balance: %.2f\n", balance);
 
     return 0;
 }
