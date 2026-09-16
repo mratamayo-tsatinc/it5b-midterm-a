@@ -25,7 +25,7 @@ public class TaskKilo {
         letter = 'B';
 
         System.out.println("Initial score: " + score);
-        System.out.printf("Initial price: %.2f%n", price);
+        System.out.printf("Initial price: %.2f%\n", price);
         System.out.println("Initial letter: " + letter);
 
         score = 90;
@@ -33,7 +33,7 @@ public class TaskKilo {
         letter = 'A';
 
         System.out.println("Updated score: " + score);
-        System.out.printf("Updated price: %.2f%n", price);
+        System.out.printf("Updated price: %.2f%\n", price);
         System.out.println("Updated letter: " + letter);
 
         int bonus = score;
