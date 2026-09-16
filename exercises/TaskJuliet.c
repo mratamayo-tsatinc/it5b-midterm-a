@@ -13,19 +13,18 @@ height = 165.5
 grade = A
 name = Maria
 */
-#include <stdio.h>
+public class TaskJuliet {
+    public static void main(String[] args) {
+        int age = 20;
+        float height = 165.5f;
+        char grade = 'A';
+        String name = "Maria";
 
-int main() {
-    int age = 20;
-    float height = 165.5;
-    char grade = 'A';
-    char name[] = "Maria";
-
-    printf("Name: %s\n", name);
-    printf("Age: %d\n", age);
-    printf("Height: %.1f cm\n", height);
-    printf("Grade: %c\n", grade);
-    printf("Pi (2 decimals): %.2f\n", 3.14159);
-    printf("Pi (4 decimals): %0.4f\n", 3.14159);
-    return 0;
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.printf("Height: %.1f cm%\n", height);
+        System.out.println("Grade: " + grade);
+        System.out.printf("Pi (2 decimals): %.2f%\n", 3.14159);
+        System.out.printf("Pi (4 decimals): %.4f%\n", 3.14159);
+    }
 }
